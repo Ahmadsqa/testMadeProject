@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>No Name (add projectName to cucumber-reporting.properties)</td>
+      <td>05 May 2020, 06:24</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_colour_tab()</td>
+              <td>2</td>
+              <td class="duration" data-value="48600">0.000</td>
+              <td class="duration" data-value="48600">0.000</td>
+              <td class="duration" data-value="97200">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_dispatch_tab()</td>
+              <td>2</td>
+              <td class="duration" data-value="3047650">0.003</td>
+              <td class="duration" data-value="3047650">0.006</td>
+              <td class="duration" data-value="6095300">0.006</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_modern_checkbox()</td>
+              <td>2</td>
+              <td class="duration" data-value="67350">0.000</td>
+              <td class="duration" data-value="67350">0.000</td>
+              <td class="duration" data-value="134700">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_new_living_room_link()</td>
+              <td>2</td>
+              <td class="duration" data-value="54250">0.000</td>
+              <td class="duration" data-value="54250">0.000</td>
+              <td class="duration" data-value="108500">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_on_arrive_in_weeks_checkbox(Integer)</td>
+              <td>2</td>
+              <td class="duration" data-value="202000">0.000</td>
+              <td class="duration" data-value="202000">0.000</td>
+              <td class="duration" data-value="404000">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_on_bedroom_checkbox()</td>
+              <td>2</td>
+              <td class="duration" data-value="62650">0.000</td>
+              <td class="duration" data-value="62650">0.000</td>
+              <td class="duration" data-value="125300">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_on_corner_sofa_checkbox()</td>
+              <td>2</td>
+              <td class="duration" data-value="95650">0.000</td>
+              <td class="duration" data-value="95650">0.000</td>
+              <td class="duration" data-value="191300">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_on_done_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="164399">0.000</td>
+              <td class="duration" data-value="164399">0.000</td>
+              <td class="duration" data-value="328799">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_on_new_tab()</td>
+              <td>2</td>
+              <td class="duration" data-value="67150">0.000</td>
+              <td class="duration" data-value="67150">0.000</td>
+              <td class="duration" data-value="134300">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_on_office()</td>
+              <td>2</td>
+              <td class="duration" data-value="69550">0.000</td>
+              <td class="duration" data-value="69550">0.000</td>
+              <td class="duration" data-value="139100">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_on_red_colour()</td>
+              <td>2</td>
+              <td class="duration" data-value="76600">0.000</td>
+              <td class="duration" data-value="76600">0.000</td>
+              <td class="duration" data-value="153201">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_product_type_tab()</td>
+              <td>2</td>
+              <td class="duration" data-value="64999">0.000</td>
+              <td class="duration" data-value="64999">0.000</td>
+              <td class="duration" data-value="129998">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_retro_checkbox()</td>
+              <td>2</td>
+              <td class="duration" data-value="192150">0.000</td>
+              <td class="duration" data-value="192150">0.000</td>
+              <td class="duration" data-value="384301">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_the_done_button()</td>
+              <td>10</td>
+              <td class="duration" data-value="95020">0.000</td>
+              <td class="duration" data-value="95020">0.000</td>
+              <td class="duration" data-value="950201">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_the_room_type_check_box()</td>
+              <td>2</td>
+              <td class="duration" data-value="264600">0.000</td>
+              <td class="duration" data-value="264600">0.000</td>
+              <td class="duration" data-value="529200">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_the_sofa_checkbox()</td>
+              <td>2</td>
+              <td class="duration" data-value="81100">0.000</td>
+              <td class="duration" data-value="81100">0.000</td>
+              <td class="duration" data-value="162200">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_click_the_style_tab()</td>
+              <td>2</td>
+              <td class="duration" data-value="59499">0.000</td>
+              <td class="duration" data-value="59499">0.000</td>
+              <td class="duration" data-value="118999">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_enter_maximum_price_as(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="190399">0.000</td>
+              <td class="duration" data-value="190399">0.000</td>
+              <td class="duration" data-value="380798">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_enter_the_minimum_price_as(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="181400">0.000</td>
+              <td class="duration" data-value="181400">0.000</td>
+              <td class="duration" data-value="362800">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.i_navigate_to_madeCom_homepage()</td>
+              <td>2</td>
+              <td class="duration" data-value="830301">0.000</td>
+              <td class="duration" data-value="830301">0.001</td>
+              <td class="duration" data-value="1660602">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">NewlyAddedRangeSearchSteps.the_results_based_on_above_criteria_are_displayed_on_the_same_homepage()</td>
+              <td>2</td>
+              <td class="duration" data-value="165749">0.000</td>
+              <td class="duration" data-value="165749">0.000</td>
+              <td class="duration" data-value="331499">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>21</td>
+            <td>50</td>
+            <td class="duration">0.000</td>
+            <td class="duration">0.006</td>
+            <td class="duration">0.012</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

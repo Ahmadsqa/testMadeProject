@@ -1,0 +1,715 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-05T18:42:37.783Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8683447901,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hook.setup()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "new arrival search",
+        "description": "",
+        "id": "search-for-newly-added-range-in-stock;new-arrival-search;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 43000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hook.tearDwon()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 661769500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i navigate to madeCom homepage",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_navigate_to_madeCom_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 114200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i click on new tab",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_new_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i click  new living room link",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_new_living_room_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i click colour tab",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_colour_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i click on red colour",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_red_colour()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i click the done button",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_done_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53301,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i click product type tab",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_product_type_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50201,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "i click the sofa checkbox",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_sofa_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "i click on corner sofa checkbox",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_corner_sofa_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "i click on done button",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_done_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48699,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "i click dispatch tab",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_dispatch_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 292400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "i click on arrive in 2 weeks checkbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 21
+                }
+              ],
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_arrive_in_weeks_checkbox(Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68001,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "i click the done button",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_done_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 201901,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "i enter the minimum price as \"£15\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£15\"",
+                  "offset": 29
+                }
+              ],
+              "location": "NewlyAddedRangeSearchSteps.i_enter_the_minimum_price_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98499,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "i enter maximum price as \"£1,699\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£1,699\"",
+                  "offset": 25
+                }
+              ],
+              "location": "NewlyAddedRangeSearchSteps.i_enter_maximum_price_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "i click the done button",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_done_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "i click the style tab",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_style_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "i click modern checkbox",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_modern_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47601,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "i click retro checkbox",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_retro_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "i click the done button",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_done_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "i click the room type check box",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_room_type_check_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "i click on bedroom checkbox",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_bedroom_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50601,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "i click on office",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_office()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "i click the done button",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_done_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "the results based on above criteria are displayed on the same homepage.",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.the_results_based_on_above_criteria_are_displayed_on_the_same_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-05T18:42:47.228Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7663847601,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hook.setup()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "new arrival search",
+        "description": "",
+        "id": "search-for-newly-added-range-in-stock;new-arrival-search;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 34301,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hook.tearDwon()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 613903300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i navigate to madeCom homepage",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_navigate_to_madeCom_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i click on new tab",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_new_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i click  new living room link",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_new_living_room_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37401,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i click colour tab",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_colour_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 977900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i click on red colour",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_red_colour()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i click the done button",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_done_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36501,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i click product type tab",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_product_type_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 169300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "i click the sofa checkbox",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_sofa_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "i click on corner sofa checkbox",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_corner_sofa_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "i click on done button",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_done_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38301,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "i click dispatch tab",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_dispatch_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83401,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "i click on arrive in 2 weeks checkbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 21
+                }
+              ],
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_arrive_in_weeks_checkbox(Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 43700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "i click the done button",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_done_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "i enter the minimum price as \"£1267\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£1267\"",
+                  "offset": 29
+                }
+              ],
+              "location": "NewlyAddedRangeSearchSteps.i_enter_the_minimum_price_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67501,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "i enter maximum price as \"£1557\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£1557\"",
+                  "offset": 25
+                }
+              ],
+              "location": "NewlyAddedRangeSearchSteps.i_enter_maximum_price_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38301,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "i click the done button",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_done_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104301,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "i click the style tab",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_style_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38499,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "i click modern checkbox",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_modern_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "i click retro checkbox",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_retro_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "i click the done button",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_done_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "i click the room type check box",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_room_type_check_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "i click on bedroom checkbox",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_bedroom_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40001,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "i click on office",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_on_office()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "i click the done button",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.i_click_the_done_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "the results based on above criteria are displayed on the same homepage.",
+            "match": {
+              "location": "NewlyAddedRangeSearchSteps.the_results_based_on_above_criteria_are_displayed_on_the_same_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search for newly added range in stock",
+    "description": "  as a customer\n  i wannt the ability to search all newly arrival items\n  so that i can review the details of items before adding into basket.\n  // Scenario No. 1 for new arrival of stock in may 2020",
+    "id": "search-for-newly-added-range-in-stock",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/made/features/NewlyAddedRangeSearch.feature",
+    "tags": []
+  }
+]
